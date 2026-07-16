@@ -38,41 +38,56 @@ z-index:-1;
 
 
 
-header{
-
-position:absolute;
-width:100%;
-padding:30px 8%;
-
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 8%;
+    background: rgba(5, 8, 22, 0.85);
+    backdrop-filter: blur(15px);
+    z-index: 1000;
 }
 
-
-
-nav{
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-.logo{
-
-font-size:28px;
-
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
 }
 
-
-.logo span{
-
-color:#38bdf8;
-
+.logo span {
+    color: #38bdf8;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
 
+nav ul li {
+    display: inline-block;
+}
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f472b6;
+}
 ul{
 
 display:flex;
